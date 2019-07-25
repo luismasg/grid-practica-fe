@@ -1,0 +1,81 @@
+body {
+  margin: 0;
+}
+
+.grid {
+  display: grid;
+  grid-template: 50px 1fr 50px / auto 1fr;
+  min-height: 100vh;
+}
+
+header {
+  grid-row: 1;
+  grid-column: 1/3;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+  display: flex;
+  align-items: center;
+
+  font-size: 30px;
+}
+header span {
+  flex: 1;
+  text-align: center;
+}
+header i {
+  padding-left: 15px;
+}
+aside {
+  width: 40px;
+  grid-row: 2;
+  grid-column: 1;
+  background-color: indigo;
+  overflow: hidden;
+  transition: 0.3s all;
+}
+
+aside ul {
+  margin: 0;
+  padding: 0;
+}
+aside h2 {
+  display: none;
+}
+aside li {
+  list-style: none;
+  padding: 10px;
+  /* border-top: 1px solid black; */
+  text-align: center;
+}
+aside li:hover {
+  background-color: #6b35a2;
+}
+aside ul li a {
+  text-decoration: none;
+  color: white;
+}
+aside li a span {
+  display: none;
+}
+aside li i {
+  display: block;
+}
+main {
+  grid-row: 2;
+  grid-column: 2;
+  /* background-color: aqua; */
+}
+
+footer {
+  grid-row: 3;
+  grid-column: 1/3;
+}
+
+aside.open {
+  width: 200px;
+}
+aside.open li a span {
+  display: block;
+}
+aside.open li i {
+  display: none !important;
+}

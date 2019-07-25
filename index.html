@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://kit.fontawesome.com/24466b86ce.js"></script>
+  </head>
+  <body>
+    <div class="grid">
+      <header>
+        <i onclick="toggle()" class="fas fa-bars"></i>
+        <span>
+          Header
+        </span>
+      </header>
+      <aside>
+        <h2>Navigation</h2>
+        <ul>
+          <li>
+            <a href="algo.html">
+              <span>Navigation Link 1</span>
+              <i class="fas fa-home"></i>
+            </a>
+          </li>
+          <li>
+            <a href="algo.html">
+              <span>Navigation Link 2</span>
+              <i class="fas fa-igloo"></i>
+            </a>
+          </li>
+          <li>
+            <a href="algo.html">
+              <span>Navigation Link 3</span>
+              <i class="fas fa-phone-square"></i>
+            </a>
+          </li>
+          <li>
+            <a href="algo.html">
+              <span>Navigation Link 4</span>
+              <i class="fas fa-briefcase"></i>
+            </a>
+          </li>
+          <li>
+            <a href="algo.html">
+              <span>Navigation Link 5</span>
+              <i class="fas fa-car-alt"></i>
+            </a>
+          </li>
+        </ul>
+      </aside>
+      <main>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio
+        reprehenderit recusandae necessitatibus odio dolore? Doloremque modi,
+        perferendis libero cumque saepe quidem? Beatae quibusdam nisi voluptate
+        sed accusamus non totam nulla?
+      </main>
+      <footer>el Footer</footer>
+    </div>
+    <script>
+      function toggle() {
+        document.querySelector("aside").classList.toggle("open");
+      }
+    </script>
+  </body>
+</html>
