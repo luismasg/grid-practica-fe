@@ -5,27 +5,64 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://kit.fontawesome.com/24466b86ce.js"></script>
   </head>
   <body>
-    Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi, vel,
-    nostrum aspernatur quae dolor dignissimos a atque cumque eum maxime illum
-    perspiciatis fugit incidunt perferendis ipsum explicabo error. Dignissimos
-    obcaecati magnam dolores soluta voluptatum doloribus beatae, mollitia
-    officia reiciendis et rerum veniam quis dolor laudantium quidem! Modi
-    excepturi at consequuntur amet, architecto culpa unde nemo sed porro, est
-    autem inventore eos ipsum, cumque cupiditate dolores corporis! Molestiae
-    deserunt ex magnam unde sequi natus reprehenderit id illo, suscipit autem
-    provident harum voluptatem quaerat, hic beatae ab velit et aut veniam.
-    Minima distinctio tempore repellendus fugiat, velit libero quis illum
-    debitis esse sequi omnis dignissimos impedit sed cum nemo eveniet et? Non,
-    ab minima eius, voluptas blanditiis qui quam enim repellat tempora totam vel
-    fugiat sapiente itaque eveniet ratione quasi provident. Rem non perspiciatis
-    vero veniam ut quam sequi tempore iure? Error est, hic quos quasi ducimus
-    nam esse fugit tempore vel voluptate, numquam natus eligendi. Et culpa
-    repudiandae molestiae? Esse animi sequi magni placeat earum assumenda!
-    Placeat perferendis modi molestiae ullam sequi ex eligendi delectus
-    temporibus illum officiis quo ratione architecto rerum beatae eum dolorem
-    quae laborum, unde tempora alias consequuntur possimus minima. Atque
-    consequatur voluptas repudiandae. Doloribus blanditiis cupiditate molestias
+    <div class="grid">
+      <header>
+        <i onclick="toggle()" class="fas fa-bars"></i>
+        <span>
+          Status
+        </span>
+      </header>
+      <aside>
+        <h2>Navigation</h2>
+        <ul>
+          <li>
+            <a href="index.html">
+              <span>Home</span>
+              <i class="fas fa-home"></i>
+            </a>
+          </li>
+          <li class="active">
+            <a href="algo.html">
+              <span>Status</span>
+              <i class="fas fa-igloo"></i>
+            </a>
+          </li>
+          <li>
+            <a href="algo.html">
+              <span>Navigation Link 3</span>
+              <i class="fas fa-phone-square"></i>
+            </a>
+          </li>
+          <li>
+            <a href="algo.html">
+              <span>Navigation Link 4</span>
+              <i class="fas fa-briefcase"></i>
+            </a>
+          </li>
+          <li>
+            <a href="algo.html">
+              <span>Navigation Link 5</span>
+              <i class="fas fa-car-alt"></i>
+            </a>
+          </li>
+        </ul>
+      </aside>
+      <main>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio
+        reprehenderit recusandae necessitatibus odio dolore? Doloremque modi,
+        perferendis libero cumque saepe quidem? Beatae quibusdam nisi voluptate
+        sed accusamus non totam nulla?
+      </main>
+      <footer>el Footer</footer>
+    </div>
+    <script>
+      function toggle() {
+        document.querySelector("aside").classList.toggle("open");
+      }
+    </script>
   </body>
 </html>

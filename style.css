@@ -79,3 +79,7 @@ aside.open li a span {
 aside.open li i {
   display: none !important;
 }
+
+li.active a {
+  color: #03dac5;
+}
